@@ -1,0 +1,8 @@
+---
+- host: appserver
+  task:
+    - name: Execute the installation of Docker daemon
+      shell: ./script_docker.sh
+    
+    - name: Create and launch the application container
+      shell: ./script_application.sh
